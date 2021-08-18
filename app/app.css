@@ -59,7 +59,7 @@ body {
 
 .nav__mobile-enlace {
     position: absolute;
-    top: 70px;
+    top: 75px;
     left: 20px;
     right: 10px;
     padding: 10px;
@@ -75,14 +75,14 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    margin: 15px 0;
-    font-weight: 700;
+    padding: 15px 0;
     color: var(--Very-Dark-Blue);
     font-size: 17px;
+    font-weight: 700;
 }
 .nav__mobile-enlace .link-login {
     border-top: 1px solid;
-    padding-top: 10px;
+    padding: 20px 0;
     color: var(--Grayish-Blue);
 }
 
