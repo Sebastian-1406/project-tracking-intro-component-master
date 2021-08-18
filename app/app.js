@@ -1,18 +1,10 @@
-let boton = document.querySelector(".nav__imagen-icon");
-const desplegar = () => {
-    let nav = document.querySelector(".nav__mobile");
-    let navImagen = document.querySelector(".nav__imagen-icon");
-    nav.classList.toggle("nav__mobile-activo");
+let botonClose = document.querySelector(".nav__imagen-close");
+let botonHamburger = document.querySelector(".nav__imagen-hamburger");
 
-    if(nav.classList[1] == "nav__mobile-activo"){
-        document.querySelector(".nav__mobile-enlace").style.animation = "aparecer 1s";
-        navImagen.src = "../images/icon-close.svg";
-    }else{
-        document.querySelector(".nav__mobile-enlace").style.animation = "desaparecer 1s";
-        navImagen.src = "../images/icon-hamburger.svg";
-    }
-    
+const desplegar = () => {
+    document.querySelector(".nav__mobile").classList.toggle("nav__mobile-activo");
+    document.querySelector(".nav__mobile-enlace").style.animation = "aparecer 1s";
 }
 
-
-boton.addEventListener("click", desplegar);
+botonClose.addEventListener("click", desplegar);
+botonHamburger.addEventListener("click", desplegar);
